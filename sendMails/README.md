@@ -49,5 +49,5 @@ To use the Gmail API, you will need to authenticate your application using your 
 ## Authentication
 To authenticate your application, you will need to use the OAuth 2.0 protocol. The easiest way to authenticate is to use the Google API client libraries, which provide a simple and consistent interface for authenticating with Google APIs.
 
-Here is an example of how to authenticate your application using the Google API client libraries in Python:
+
 
