@@ -3,7 +3,7 @@ const { OAuth2Client } = require('google-auth-library');
 
 const CLIENT_ID = process.env.CLIENT_ID.toString()
 const CLIENT_SECRET = process.env.CLIENT_SECRET.toString()
-const REDIRECT_URI = `${baseURL}/signUp/auth/google/callback`;
+const REDIRECT_URI = `${baseURL}/signUp/auth/google/callback`;  // give the base URL of ur project
 
 
 const client = new OAuth2Client(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
