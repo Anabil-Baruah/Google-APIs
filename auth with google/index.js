@@ -1,3 +1,11 @@
+const express = require('express')
+const app = express()
+const nodemailer = require('nodemailer')
+const { google } = require('googleapis');
+// const { OAuth2Client } = require('google-auth-library');
+
+
+app.use(express.urlencoded({ extended: true }))
 const { OAuth2Client } = require('google-auth-library');
 
 
@@ -72,3 +80,5 @@ router.route('/auth/google/callback')
             res.redirect(`${baseURL}/signUp`);
         }
     });
+
+    app.listen(3001, () => { console.log("server started") })
